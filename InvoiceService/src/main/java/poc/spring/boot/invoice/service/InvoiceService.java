@@ -48,7 +48,7 @@ public class InvoiceService {
 	
 	private List<Item> itemsByInvoiceId(Integer id) {
 		
-		String itemsJSONString = restTemplate.getForObject("http://localhost:8091/item/itemsByInvoiceId?invoiceId="+id, String.class);
+		String itemsJSONString = restTemplate.getForObject("https://sampleitemservice.cfapps.io/item/itemsByInvoiceId?invoiceId="+id, String.class);
 		ObjectMapper mapper = new ObjectMapper();
 		List<Item> items = new ArrayList<Item>();
 		try {
