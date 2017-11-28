@@ -1,0 +1,5 @@
+---
+applications:
+- name: SampleInvoiceService
+  memory: 768M
+  path: build/libs/InvoiceService-0.0.1-SNAPSHOT.jar
