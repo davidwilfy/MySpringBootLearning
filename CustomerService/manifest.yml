@@ -1,5 +1,5 @@
 ---
 applications:
 - name: SampleCustomerService
-  memory: 768M
+  memory: 400M
   path: build/libs/CustomerService-0.0.1-SNAPSHOT.jar

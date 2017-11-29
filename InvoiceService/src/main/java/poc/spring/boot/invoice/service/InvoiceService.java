@@ -1,10 +1,12 @@
 package poc.spring.boot.invoice.service;
 
 import java.io.IOException;
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -28,6 +30,9 @@ public class InvoiceService {
 	@Autowired
 	RestTemplate restTemplate;
 	
+	@Value("${itemsByInvoiceIdURI}")
+	private String itemsByInvoiceIdURI;
+	
 	public Invoice findById(int id) {
 		Invoice invoice = invoiceDao.findById(id);
 		
@@ -47,8 +52,8 @@ public class InvoiceService {
 	}
 	
 	private List<Item> itemsByInvoiceId(Integer id) {
-		
-		String itemsJSONString = restTemplate.getForObject("https://sampleitemservice.cfapps.io/item/itemsByInvoiceId?invoiceId="+id, String.class);
+		String url = MessageFormat.format(itemsByInvoiceIdURI, id);
+		String itemsJSONString = restTemplate.getForObject(url, String.class);
 		ObjectMapper mapper = new ObjectMapper();
 		List<Item> items = new ArrayList<Item>();
 		try {

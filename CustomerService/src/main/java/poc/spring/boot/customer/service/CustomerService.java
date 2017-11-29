@@ -1,10 +1,12 @@
 package poc.spring.boot.customer.service;
 
 import java.io.IOException;
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -28,9 +30,12 @@ public class CustomerService {
 	@Autowired
 	RestTemplate restTemplate;
 	
+	@Value("${invoiceByCustomerIdURI}")
+	private String invoiceByCustomerIdURI;
+	
 	public Customer findById(int id) {
-		
-		String invoiceJSONString = restTemplate.getForObject("http://localhost:8090/invoice/invoiceByCustomerId?customerId="+id, String.class);
+		String url = MessageFormat.format(invoiceByCustomerIdURI, id);
+		String invoiceJSONString = restTemplate.getForObject(url, String.class);
 		ObjectMapper mapper = new ObjectMapper();
 		List<Invoice> invoices = new ArrayList<Invoice>();
 		try {

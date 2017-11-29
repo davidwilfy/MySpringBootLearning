@@ -1,5 +1,5 @@
 ---
 applications:
 - name: SampleItemService
-  memory: 768M
+  memory: 400M
   path: build/libs/ItemService-0.0.1-SNAPSHOT.jar
