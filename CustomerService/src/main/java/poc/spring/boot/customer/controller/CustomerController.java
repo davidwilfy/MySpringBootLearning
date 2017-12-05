@@ -11,10 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 import poc.spring.boot.customer.model.Customer;
 import poc.spring.boot.customer.service.CustomerService;
 
-/**
- * @author 188152
- *
- */
 @RestController
 public class CustomerController {
 

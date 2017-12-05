@@ -22,10 +22,6 @@ import poc.spring.boot.item.dao.ItemDao;
 import poc.spring.boot.item.model.Item;
 import poc.spring.boot.item.model.Product;
 
-/**
- * @author 188152
- *
- */
 @Service
 public class ItemService {
 

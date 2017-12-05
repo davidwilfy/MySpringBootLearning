@@ -7,10 +7,6 @@ import org.springframework.jdbc.core.RowMapper;
 
 import poc.spring.boot.item.model.Item;
 
-/**
- * @author 188152
- *
- */
 public class ItemRowMapper implements RowMapper<Item>{
 
 	@Override

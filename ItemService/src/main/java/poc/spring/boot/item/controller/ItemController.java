@@ -11,10 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 import poc.spring.boot.item.model.Item;
 import poc.spring.boot.item.service.ItemService;
 
-/**
- * @author 188152
- *
- */
 @RestController
 public class ItemController {
 

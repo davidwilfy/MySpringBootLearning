@@ -2,10 +2,6 @@ package poc.spring.boot.customer.model;
 
 import java.util.List;
 
-/**
- * @author 188152
- *
- */
 public class Customer {
 
 	private Integer id;

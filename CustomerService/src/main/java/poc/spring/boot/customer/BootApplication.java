@@ -3,10 +3,6 @@ package poc.spring.boot.customer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/**
- * @author 188152
- *
- */
 @SpringBootApplication
 public class BootApplication {
 

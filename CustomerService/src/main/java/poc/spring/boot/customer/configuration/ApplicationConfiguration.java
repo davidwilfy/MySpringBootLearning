@@ -12,10 +12,6 @@ import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 import org.springframework.web.client.RestTemplate;
 
-/**
- * @author 188152
- *
- */
 @Configuration
 public class ApplicationConfiguration {
 

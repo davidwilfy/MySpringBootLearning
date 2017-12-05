@@ -2,10 +2,6 @@ package poc.spring.boot.invoice.model;
 
 import java.util.List;
 
-/**
- * @author 188152
- *
- */
 public class Invoice {
 
 	private Integer id;

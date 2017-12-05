@@ -1,9 +1,6 @@
 package poc.spring.boot.product.model;
 
-/**
- * @author 188152
- *
- */
+
 public class Product {
 
 	private Integer id;

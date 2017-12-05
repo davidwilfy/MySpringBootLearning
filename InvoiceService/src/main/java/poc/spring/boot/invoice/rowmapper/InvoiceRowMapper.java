@@ -9,10 +9,6 @@ import org.springframework.jdbc.core.RowMapper;
 
 import poc.spring.boot.invoice.model.Invoice;
 
-/**
- * @author 188152
- *
- */
 public class InvoiceRowMapper implements RowMapper<Invoice>{
 
 	@Override

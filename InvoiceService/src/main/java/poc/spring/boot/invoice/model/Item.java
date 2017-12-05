@@ -1,9 +1,5 @@
 package poc.spring.boot.invoice.model;
 
-/**
- * @author 188152
- *
- */
 public class Item {
 
 	private Integer id;

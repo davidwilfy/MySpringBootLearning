@@ -6,10 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 import de.codecentric.boot.admin.config.EnableAdminServer;
 
-/**
- * @author 188152
- *
- */
+
 @Configuration
 @EnableAutoConfiguration
 @EnableAdminServer

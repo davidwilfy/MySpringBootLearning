@@ -10,10 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 import poc.spring.boot.customer.model.Customer;
 import poc.spring.boot.customer.rowmapper.CustomerRowMapper;
 
-/**
- * @author 188152
- *
- */
 @Repository
 public class CustomerDao {
 	

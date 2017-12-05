@@ -17,10 +17,6 @@ import poc.spring.boot.invoice.dao.InvoiceDao;
 import poc.spring.boot.invoice.model.Invoice;
 import poc.spring.boot.invoice.model.Item;
 
-/**
- * @author 188152
- *
- */
 @Service
 public class InvoiceService {
 

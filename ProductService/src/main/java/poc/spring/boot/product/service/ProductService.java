@@ -8,10 +8,7 @@ import org.springframework.stereotype.Service;
 import poc.spring.boot.product.dao.ProductDao;
 import poc.spring.boot.product.model.Product;
 
-/**
- * @author 188152
- *
- */
+
 @Service
 public class ProductService {
 

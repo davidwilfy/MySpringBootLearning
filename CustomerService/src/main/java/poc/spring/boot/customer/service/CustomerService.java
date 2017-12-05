@@ -17,10 +17,6 @@ import poc.spring.boot.customer.dao.CustomerDao;
 import poc.spring.boot.customer.model.Customer;
 import poc.spring.boot.customer.model.Invoice;
 
-/**
- * @author 188152
- *
- */
 @Service
 public class CustomerService {
 

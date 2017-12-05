@@ -7,10 +7,6 @@ import org.springframework.jdbc.core.RowMapper;
 
 import poc.spring.boot.product.model.Product;
 
-/**
- * @author 188152
- *
- */
 public class ProductRowMapper implements RowMapper<Product>{
 
 	@Override

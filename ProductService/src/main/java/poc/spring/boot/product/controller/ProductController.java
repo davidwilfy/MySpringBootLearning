@@ -11,10 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 import poc.spring.boot.product.model.Product;
 import poc.spring.boot.product.service.ProductService;
 
-/**
- * @author 188152
- *
- */
 @RestController
 public class ProductController {
 

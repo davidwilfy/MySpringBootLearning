@@ -9,10 +9,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import poc.spring.boot.product.model.Product;
 
-/**
- * @author 188152
- *
- */
 @Repository
 public class ProductDao {
 

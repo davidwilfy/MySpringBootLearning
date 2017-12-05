@@ -11,10 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 import poc.spring.boot.invoice.model.Invoice;
 import poc.spring.boot.invoice.service.InvoiceService;
 
-/**
- * @author 188152
- *
- */
 @RestController
 public class InvoiceController {
 

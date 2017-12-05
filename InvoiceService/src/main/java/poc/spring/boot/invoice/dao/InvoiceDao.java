@@ -10,10 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 import poc.spring.boot.invoice.model.Invoice;
 import poc.spring.boot.invoice.rowmapper.InvoiceRowMapper;
 
-/**
- * @author 188152
- *
- */
 @Repository
 public class InvoiceDao {
 

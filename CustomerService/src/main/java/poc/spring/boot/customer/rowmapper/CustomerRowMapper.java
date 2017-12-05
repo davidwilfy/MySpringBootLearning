@@ -7,10 +7,6 @@ import org.springframework.jdbc.core.RowMapper;
 
 import poc.spring.boot.customer.model.Customer;
 
-/**
- * @author 188152
- *
- */
 public class CustomerRowMapper implements RowMapper<Customer>{
 
 	@Override
